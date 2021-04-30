@@ -1,6 +1,6 @@
 function callDictionaryApi() {
     var input = document.getElementById('inputedWord').value
-    axios.post('http://localhost:3000/createDictionaryPage', {'word': input})
+    axios.post('https://shabdo-ki-dictionary.herokuapp.com/createDictionaryPage', {'word': input})
     .then(function (response) {
         console.log('received----',response);
         if (response.data.data[0].definition) {
