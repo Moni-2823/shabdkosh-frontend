@@ -76,10 +76,12 @@
                     <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
                 </div>
                 <div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Enter word" aria-label="Enter word" aria-describedby="button-addon2" id="inputedWord">
-                        <button class="btn btn-outline-secondary" type="button" id="request-button" onclick="callDictionaryApi()">Button</button>
-                    </div>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Enter word" aria-label="Enter word" aria-describedby="button-addon2" id="inputedWord">
+                            <button class="btn btn-outline-secondary" type="submit" id="request-button" onclick="callDictionaryApi()">Button</button>
+                        </div>
+                    </form>
                 </div>
                 <p class="card-text" id="detail"></p>
             </div>
